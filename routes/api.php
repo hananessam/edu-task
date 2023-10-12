@@ -21,3 +21,7 @@ Route::group(['prefix' => 'users'], function ()
     Route::get('', [UserController::class, 'users']);
 });
 
+Route::group(['prefix' => 'transactions'], function ()
+{
+    Route::get('', [TransactionController::class, 'transactions']);
+});
