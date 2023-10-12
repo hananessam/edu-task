@@ -1,0 +1,238 @@
+{
+	"info": {
+		"_postman_id": "8aa4b453-8d4e-41e5-9f6e-7b7121adce3a",
+		"name": "edu-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12305828",
+		"_collection_link": "https://galactic-station-282026.postman.co/workspace/eagles~af83f0fe-362e-4915-bb88-cbbb0521f960/collection/12305828-8aa4b453-8d4e-41e5-9f6e-7b7121adce3a?action=share&source=collection_link&creator=12305828"
+	},
+	"item": [
+		{
+			"name": "users with transactions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/users",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/users",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 12 Oct 2023 19:47:38 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 12 Oct 2023 19:47:38 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"users\": [\n        {\n            \"id\": \"3fc2-a8d1\",\n            \"email\": \"parent1@parent.eu\",\n            \"currency\": \"SAR\",\n            \"balance\": \"354.50\",\n            \"created_at\": \"22/12/2018\",\n            \"transactions\": [\n                {\n                    \"paidAmount\": \"280.00\",\n                    \"Currency\": \"SAR\",\n                    \"parentEmail\": \"parent1@parent.eu\",\n                    \"statusCode\": 1,\n                    \"paymentDate\": \"2021-11-30\",\n                    \"parentIdentification\": \"d3d29d70-1d25-11e3-8591-034165a3a613\"\n                },\n                {\n                    \"paidAmount\": \"150.00\",\n                    \"Currency\": \"SAR\",\n                    \"parentEmail\": \"parent1@parent.eu\",\n                    \"statusCode\": 2,\n                    \"paymentDate\": \"2021-10-6\",\n                    \"parentIdentification\": \"d3d29d70-1d66-11e3-8591-034165a3a613\"\n                }\n            ]\n        },\n        {\n            \"id\": \"4fc2-a8d1\",\n            \"email\": \"parent2@parent.eu\",\n            \"currency\": \"USD\",\n            \"balance\": \"1000.00\",\n            \"created_at\": \"22/12/2018\",\n            \"transactions\": [\n                {\n                    \"paidAmount\": \"200.50\",\n                    \"Currency\": \"USD\",\n                    \"parentEmail\": \"parent2@parent.eu\",\n                    \"statusCode\": 2,\n                    \"paymentDate\": \"2018-01-01\",\n                    \"parentIdentification\": \"e3rffr-1d25-dddw-8591-034165a3a613\"\n                },\n                {\n                    \"paidAmount\": \"100.50\",\n                    \"Currency\": \"USD\",\n                    \"parentEmail\": \"parent2@parent.eu\",\n                    \"statusCode\": 3,\n                    \"paymentDate\": \"2018-05-01\",\n                    \"parentIdentification\": \"69863004-2739-4ada-bafc-eba18e400507\"\n                }\n            ]\n        },\n        {\n            \"id\": \"4fc3-a8d2\",\n            \"email\": \"parent5@parent.eu\",\n            \"currency\": \"EUR\",\n            \"balance\": \"130.00\",\n            \"created_at\": \"02/08/2019\",\n            \"transactions\": [\n                {\n                    \"paidAmount\": \"200.00\",\n                    \"Currency\": \"EUR\",\n                    \"parentEmail\": \"parent5@parent.eu\",\n                    \"statusCode\": 1,\n                    \"paymentDate\": \"2022-10-30\",\n                    \"parentIdentification\": \"d3d29d40-1d25-11e3-8591-034165a3a6133\"\n                }\n            ]\n        },\n        {\n            \"id\": \"4ff3-a8d9\",\n            \"email\": \"parent6@parent.eu\",\n            \"currency\": \"SAR\",\n            \"balance\": \"900.00\",\n            \"created_at\": \"02/08/2020\",\n            \"transactions\": [\n                {\n                    \"paidAmount\": \"700.00\",\n                    \"Currency\": \"SAR\",\n                    \"parentEmail\": \"parent6@parent.eu\",\n                    \"statusCode\": 2,\n                    \"paymentDate\": \"2021-11-30\",\n                    \"parentIdentification\": \"t3d29d70-1d25-11e3-8591-034166a3a613\"\n                }\n            ]\n        },\n        {\n            \"id\": \"9fr3-a8d9\",\n            \"email\": \"parent7@parent.eu\",\n            \"currency\": \"SAR\",\n            \"balance\": \"600.00\",\n            \"created_at\": \"04/09/2019\",\n            \"transactions\": [\n                {\n                    \"paidAmount\": \"700.00\",\n                    \"Currency\": \"SAR\",\n                    \"parentEmail\": \"parent7@parent.eu\",\n                    \"statusCode\": 2,\n                    \"paymentDate\": \"2021-11-30\",\n                    \"parentIdentification\": \"t3d29d70-1d25-11e3-8591-034166a3a613\"\n                },\n                {\n                    \"paidAmount\": \"200.00\",\n                    \"Currency\": \"SAR\",\n                    \"parentEmail\": \"parent7@parent.eu\",\n                    \"statusCode\": 2,\n                    \"paymentDate\": \"2020-11-30\",\n                    \"parentIdentification\": \"bf533db0-f866-4aa2-9c00-55584f63419c\"\n                }\n            ]\n        },\n        {\n            \"id\": \"rrc2-a8d1\",\n            \"email\": \"parent3@parent.eu\",\n            \"currency\": \"EGP\",\n            \"balance\": \"560.00\",\n            \"created_at\": \"22/12/2018\",\n            \"transactions\": [\n                {\n                    \"paidAmount\": \"500.00\",\n                    \"Currency\": \"EGP\",\n                    \"parentEmail\": \"parent3@parent.eu\",\n                    \"statusCode\": 1,\n                    \"paymentDate\": \"2021-02-27\",\n                    \"parentIdentification\": \"4erert4e-2www-wddc-8591-034165a3a613\"\n                }\n            ]\n        },\n        {\n            \"id\": \"sfc2-e8d1\",\n            \"email\": \"parent4@parent.eu\",\n            \"currency\": \"AED\",\n            \"balance\": \"7000.00\",\n            \"created_at\": \"11/11/2018\",\n            \"transactions\": [\n                {\n                    \"paidAmount\": \"400.00\",\n                    \"Currency\": \"AED\",\n                    \"parentEmail\": \"parent4@parent.eu\",\n                    \"statusCode\": 1,\n                    \"paymentDate\": \"2022-09-07\",\n                    \"parentIdentification\": \"d3dwwd70-1d25-11e3-8591-034165a3a613\"\n                }\n            ]\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "transactions with users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/transactions",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"transactions"
+					],
+					"query": [
+						{
+							"key": "statusCode",
+							"value": "1",
+							"description": "1,2,3",
+							"disabled": true
+						},
+						{
+							"key": "currency",
+							"value": "SAR",
+							"description": "SAR,USD,EGP,AED,EUR",
+							"disabled": true
+						},
+						{
+							"key": "amountFrom",
+							"value": "100",
+							"disabled": true
+						},
+						{
+							"key": "amountTo",
+							"value": "150",
+							"disabled": true
+						},
+						{
+							"key": "dateFrom",
+							"value": "2018-05-01",
+							"disabled": true
+						},
+						{
+							"key": "dateTo",
+							"value": "2021-02-27",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/transactions",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"transactions"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 12 Oct 2023 19:46:10 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 12 Oct 2023 19:46:10 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"transactions\": [\n        {\n            \"paidAmount\": \"280.00\",\n            \"Currency\": \"SAR\",\n            \"parentEmail\": \"parent1@parent.eu\",\n            \"statusCode\": 1,\n            \"paymentDate\": \"2021-11-30\",\n            \"parentIdentification\": \"d3d29d70-1d25-11e3-8591-034165a3a613\",\n            \"user\": {\n                \"id\": \"3fc2-a8d1\",\n                \"email\": \"parent1@parent.eu\",\n                \"currency\": \"SAR\",\n                \"balance\": \"354.50\",\n                \"created_at\": \"22/12/2018\"\n            }\n        },\n        {\n            \"paidAmount\": \"200.50\",\n            \"Currency\": \"USD\",\n            \"parentEmail\": \"parent2@parent.eu\",\n            \"statusCode\": 2,\n            \"paymentDate\": \"2018-01-01\",\n            \"parentIdentification\": \"e3rffr-1d25-dddw-8591-034165a3a613\",\n            \"user\": {\n                \"id\": \"4fc2-a8d1\",\n                \"email\": \"parent2@parent.eu\",\n                \"currency\": \"USD\",\n                \"balance\": \"1000.00\",\n                \"created_at\": \"22/12/2018\"\n            }\n        },\n        {\n            \"paidAmount\": \"500.00\",\n            \"Currency\": \"EGP\",\n            \"parentEmail\": \"parent3@parent.eu\",\n            \"statusCode\": 1,\n            \"paymentDate\": \"2021-02-27\",\n            \"parentIdentification\": \"4erert4e-2www-wddc-8591-034165a3a613\",\n            \"user\": {\n                \"id\": \"rrc2-a8d1\",\n                \"email\": \"parent3@parent.eu\",\n                \"currency\": \"EGP\",\n                \"balance\": \"560.00\",\n                \"created_at\": \"22/12/2018\"\n            }\n        },\n        {\n            \"paidAmount\": \"400.00\",\n            \"Currency\": \"AED\",\n            \"parentEmail\": \"parent4@parent.eu\",\n            \"statusCode\": 1,\n            \"paymentDate\": \"2022-09-07\",\n            \"parentIdentification\": \"d3dwwd70-1d25-11e3-8591-034165a3a613\",\n            \"user\": {\n                \"id\": \"sfc2-e8d1\",\n                \"email\": \"parent4@parent.eu\",\n                \"currency\": \"AED\",\n                \"balance\": \"7000.00\",\n                \"created_at\": \"11/11/2018\"\n            }\n        },\n        {\n            \"paidAmount\": \"200.00\",\n            \"Currency\": \"EUR\",\n            \"parentEmail\": \"parent5@parent.eu\",\n            \"statusCode\": 1,\n            \"paymentDate\": \"2022-10-30\",\n            \"parentIdentification\": \"d3d29d40-1d25-11e3-8591-034165a3a6133\",\n            \"user\": {\n                \"id\": \"4fc3-a8d2\",\n                \"email\": \"parent5@parent.eu\",\n                \"currency\": \"EUR\",\n                \"balance\": \"130.00\",\n                \"created_at\": \"02/08/2019\"\n            }\n        },\n        {\n            \"paidAmount\": \"700.00\",\n            \"Currency\": \"SAR\",\n            \"parentEmail\": \"parent6@parent.eu\",\n            \"statusCode\": 2,\n            \"paymentDate\": \"2021-11-30\",\n            \"parentIdentification\": \"t3d29d70-1d25-11e3-8591-034166a3a613\",\n            \"user\": {\n                \"id\": \"4ff3-a8d9\",\n                \"email\": \"parent6@parent.eu\",\n                \"currency\": \"SAR\",\n                \"balance\": \"900.00\",\n                \"created_at\": \"02/08/2020\"\n            }\n        },\n        {\n            \"paidAmount\": \"700.00\",\n            \"Currency\": \"SAR\",\n            \"parentEmail\": \"parent7@parent.eu\",\n            \"statusCode\": 2,\n            \"paymentDate\": \"2021-11-30\",\n            \"parentIdentification\": \"t3d29d70-1d25-11e3-8591-034166a3a613\",\n            \"user\": {\n                \"id\": \"9fr3-a8d9\",\n                \"email\": \"parent7@parent.eu\",\n                \"currency\": \"SAR\",\n                \"balance\": \"600.00\",\n                \"created_at\": \"04/09/2019\"\n            }\n        },\n        {\n            \"paidAmount\": \"150.00\",\n            \"Currency\": \"SAR\",\n            \"parentEmail\": \"parent1@parent.eu\",\n            \"statusCode\": 2,\n            \"paymentDate\": \"2021-10-6\",\n            \"parentIdentification\": \"d3d29d70-1d66-11e3-8591-034165a3a613\",\n            \"user\": {\n                \"id\": \"3fc2-a8d1\",\n                \"email\": \"parent1@parent.eu\",\n                \"currency\": \"SAR\",\n                \"balance\": \"354.50\",\n                \"created_at\": \"22/12/2018\"\n            }\n        },\n        {\n            \"paidAmount\": \"200.00\",\n            \"Currency\": \"SAR\",\n            \"parentEmail\": \"parent7@parent.eu\",\n            \"statusCode\": 2,\n            \"paymentDate\": \"2020-11-30\",\n            \"parentIdentification\": \"bf533db0-f866-4aa2-9c00-55584f63419c\",\n            \"user\": {\n                \"id\": \"9fr3-a8d9\",\n                \"email\": \"parent7@parent.eu\",\n                \"currency\": \"SAR\",\n                \"balance\": \"600.00\",\n                \"created_at\": \"04/09/2019\"\n            }\n        },\n        {\n            \"paidAmount\": \"100.50\",\n            \"Currency\": \"USD\",\n            \"parentEmail\": \"parent2@parent.eu\",\n            \"statusCode\": 3,\n            \"paymentDate\": \"2018-05-01\",\n            \"parentIdentification\": \"69863004-2739-4ada-bafc-eba18e400507\",\n            \"user\": {\n                \"id\": \"4fc2-a8d1\",\n                \"email\": \"parent2@parent.eu\",\n                \"currency\": \"USD\",\n                \"balance\": \"1000.00\",\n                \"created_at\": \"22/12/2018\"\n            }\n        }\n    ]\n}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "http://127.0.0.1:8000",
+			"type": "string"
+		}
+	]
+}
